@@ -49,7 +49,7 @@ async function crawlTuoiTreCuoi() {
 			const data = await crawlOnePage(
 				url,
 				"body > article > div > h3 > a",
-				"https://cuoi.tuoitre.vn/",
+				"https://cuoi.tuoitre.vn",
 				1
 			);
 			result = result.concat(data);
@@ -97,7 +97,7 @@ async function crawlThanhNien() {
 }
 
 async function main() {
-	// await crawlTuoiTreCuoi();
+	await crawlTuoiTreCuoi();
 	// await crawlThanhNien();
 	const tuoitrecuoi: ISarcasmHeadlines[] = require("./tuoitrecuoi.json");
 	const thanhnien: ISarcasmHeadlines[] = require("./thanhnien.json");
