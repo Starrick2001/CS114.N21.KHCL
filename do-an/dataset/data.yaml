@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 18
+names: ['bag', 'bottle', 'can', 'cardboard box', 'clothes', 'drinking straw', 'foam box', 'lid', 'mask', 'milk box', 'napkin', 'packet', 'paper', 'plastic glass', 'plastic holder', 'plastic utensil', 'snack package', 'trash bag']
+
+roboflow:
+  workspace: trashclassification-fgykb
+  project: garbage-classification-qmp4x
+  version: 11
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trashclassification-fgykb/garbage-classification-qmp4x/dataset/11
